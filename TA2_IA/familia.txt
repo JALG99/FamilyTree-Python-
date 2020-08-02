@@ -1,0 +1,24 @@
+# This file is an example to show how to format a family.
+# Two lines represent an union:
+Louis XIV (M)
+Marie-Thérèse d'Autriche (F)
+# Indented lines after the union represent children
+	Louis de France (id=Louis1661, M)
+	Marie-Thérèse\nde France (F)
+	Philippe-Charles\nde France (M)
+
+# Another union (2 parents + 3 children), father is one the previous union's children:
+Louis de France (id=Louis1661)
+Marie Anne\nChristine\nde Bavière (F)
+	Louis de France (id=Louis1682, M)
+	Philippe (M)
+	Charles (M)
+
+# When several persons have the same name, ids can be used to differentiate them.
+Louis de France (id=Louis1682)
+Marie-Adélaïde\nde Savoie (F)
+	Louis XV (M, id=LouisXV)
+
+Louis de France (id=Louis1661)
+Marie (F)
+	Paco (M)
